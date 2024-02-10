@@ -1,0 +1,48 @@
+/* Universal Variables */
+:root {
+    --textcolor_main: #121212;
+    --main_font: sans-serif;
+    --link_color: rgb(0, 138, 180);
+}
+/* Universal rules */
+*{
+    text-align: center;
+    color: var(--textcolor_main);
+    font-family: var(--main_font);
+    padding: 1%;
+    margin: 0;
+}
+/* Baseline HTML elements not including major containers or major elemnts like body*/
+
+h1 {
+    font-size: 4rem;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--link_color);
+}
+/* main content container, was using it to potentially fix the styling or allow for a different layout horizontally */
+#content-main p{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/*QR Code Styling*/
+.codeholder{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.codeholder h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+.codeholder img{
+    margin: 0;
+    padding: 0;
+    
+}
