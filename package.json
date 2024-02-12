@@ -1,0 +1,31 @@
+{
+  "name": "all-things-js-website",
+  "version": "1.0.0",
+  "description": "ATJS Official Website",
+  "main": "index.html",
+  "scripts": {
+    "prepare": "husky install",
+    "pretest": "npm run lint",
+    "posttest": "npm run format",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "npx @biomejs/biome lint --apply .",
+    "format": "npx @biomejs/biome format --write .",
+    "fix": "npx @biomejs/biome check --apply ."
+  },
+  "devDependencies": {
+    "vite": "^5.1.1",
+    "@biomejs/biome": "1.5.3",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "lint-staged": {
+    "*": [
+      "biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true"
+    ]
+  }
+}
