@@ -1,5 +1,25 @@
 /* Universal Variables */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+.nav-links {
+  background-color: bisque;
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links{
+  gap: 2rem;
+}
+
 :root {
   --textcolor_main: #121212;
   --main_font: sans-serif;
@@ -37,6 +57,14 @@ li {
 }
 
 /* main content container, was using it to potentially fix the styling or allow for a different layout horizontally */
+#hero {
+  background-color: lightcoral;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 #content-main p {
   font-size: 1.25rem;
@@ -57,6 +85,17 @@ li {
 }
 
 .codeholder img {
+  margin: 0;
+  padding: 0;
+}
+
+#event{
+  display:flex;
+  background-color: lightslategray;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  height: 60vh;
   margin: 0;
   padding: 0;
 }
