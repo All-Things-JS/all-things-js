@@ -60,3 +60,34 @@ li {
   margin: 0;
   padding: 0;
 }
+
+/*page section styling*/
+#first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgbA(0,1,0,.1);
+}
+
+/* Socials  */
+/* Icon Container */
+.icon-container{
+  
+  background-color: rgba(20,20,20,.1);
+  display: flex;
+  width: 33vw;
+  margin: 0;
+  padding: 1%;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+/* Socials Icon */
+.social-icon {
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-color: #121212;
+
+}
