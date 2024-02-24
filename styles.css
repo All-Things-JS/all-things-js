@@ -1,5 +1,9 @@
 /* Universal Variables */
 
+html {
+  scroll-behavior : smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -56,46 +60,46 @@ li {
 	list-style: none;
 }
 
-/* main content container, was using it to potentially fix the styling or allow for a different layout horizontally */
-#hero {
-  background-color: lightcoral;
-  height: 60vh;
-  display: flex;
+/* sections */
+#front-page, #events {
+  position: relative;
+  height: 100vh;
   justify-content: center;
   align-items: center;
+}
+#front-page {
+  background-color: #e2e8f0;
+  display: flex;
+
   flex-direction: column;
 }
+
+/* Front Page */
 
 #content-main p {
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-/* QR Code Styling */
+/* Events */
 
-.codeholder {
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.codeholder h3 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.codeholder img {
-  margin: 0;
-  padding: 0;
-}
-
-#event{
+#events{
   display:flex;
   background-color: lightslategray;
-  justify-content: center;
-  align-items: center;
   overflow: auto;
-  height: 60vh;
   margin: 0;
   padding: 0;
 }
+
+/* Assets/buttons/icons */
+
+.icon-arrow,
+.icon-arrow-home {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2vw;
+  height:auto;
+}੡
+

@@ -12,31 +12,25 @@
     <nav id="desktop-nav">
       <div class="logo">ATJS</div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
         <li><a href="#events">Events</a></li>
       </ul>
     </nav>
 
-    <section id="hero">
+    <section id="front-page">
       <div id="content-main">
         <h1>All Things JS</h1>
         <p>This is the landing page of the All Things JS group.</p>
         <p>
-          We talk about javascript and related topics, we are building a
-          community to share our interest and spread knowledge.
+          We talk about Javascript and js-adjacent topics, we are a
+          community about sharing our interest and spreading knowledge.
         </p>
       </div>
-
-      <div class="codeholder">
-        <h3>
-          QR Code:
-          <a href="https://www.meetup.com/all-things-js/">Link To Meetup.</a>
-        </h3>
-        <img src="./images/qrcode.png" />
+      <div id="social-component">
       </div>
+      <img src="./src/assets/arrow.png" alt="Arrow icon" class="icon-arrow" onclick="window.location.href='#events'"/>
     </section>
 
-    <section id="event">
+    <section id="events">
       <div>
         <h3>Events</h3>
         <ul>
@@ -46,6 +40,7 @@
           <li>Come talk about JavaScript!</li>
         </ul>
       </div>
+      <img src="./src/assets/arrow-up.png" alt="Arrow icon" class="icon-arrow" onclick="window.location.href='#front-page'"/>
     </section>
   </body>
 </html>
