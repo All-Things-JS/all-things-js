@@ -97,6 +97,91 @@ li {
 
 /* Events */
 
+#carousel{
+  /*max-width: 3vw;*/
+  width: 40vw;
+  min-height: calc((9/16) * 40vw);
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+.carouselImg{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+#carousel img:nth-child(1) {
+    animation-name: img1;
+    animation-timing-function: steps(1, start);
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#carousel img:nth-child(2) {
+    animation-name: img2;
+    animation-timing-function: steps(1, start);
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#carousel img:nth-child(3) {
+    animation-name: img3;
+    animation-timing-function: steps(1, start);
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img1 {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+
+        opacity: 1;
+    }
+}
+@keyframes img2 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes img3 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 #events{
   display:flex;
   background-color: #fff0c9;
@@ -104,6 +189,16 @@ li {
   overflow: auto;
   margin: 0;
   padding: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#test{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
 }
 
 /* Assets/buttons/icons */
