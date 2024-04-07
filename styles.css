@@ -250,14 +250,3 @@ ul {
   border: 2px solid black;
   box-shadow: 10px 5px 5px rgb(199, 105, 60);
 }
-
-/* Assets/buttons/icons */
-
-.icon-arrow, .icon-arrow-home {
-  position: relative;
-  right: 1rem;
-  bottom: 1rem;
-  width: 2vw;
-  height:auto;
-}
-
