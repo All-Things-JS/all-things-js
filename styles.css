@@ -1,98 +1,140 @@
-/* Universal Variables */
 
-html {
-  scroll-behavior : smooth;
+* {
+  margin: 0;
+  padding: 0;  
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("./src/assets/texture1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+  background-color: rgb(230, 233, 234);
+  font-family: "Roboto", sans-serif;
+  color: rgb(199, 105, 60);
 }
 
-nav {
-  align-items: center;
-  justify-content: space-between;
+html {
+  scroll-behavior: smooth;
 }
 
-nav,
+#main-menu {
+  position: fixed;
+  float: right;
+  right: 0;
+  z-index: 1;
+  justify-content: space-around;
+  height: 15vh;
+}
+
 .nav-links {
-  background-color: #e6e0d5;
-  opacity: .92;
-  display: flex;
-  font-size: 24px;
-}
-
-
-
-.logo {
-  margin-left: 1rem;
-  font-weight: bold;
-}
-.nav-links{
   gap: 2rem;
-  margin-right: 1rem;
-}
+  list-style: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem 0 0 ;
+} 
 
-:root {
-  --textcolor_main: #121212;
-  --main_font: sans-serif;
-  --link_color: rgb(0, 138, 180);
-}
-
-/* Universal rules */
-
-* {
-  text-align: center;
-  color: var(--textcolor_main);
-  font-family: var(--main_font);
-  margin: 0;
-}
-
-/* Baseline HTML elements not including major containers or major elements like body*/
-
-h1 {
-  font-size: 4rem;
-  margin-top: 5%;
-  margin-bottom: 0;
+#main-menu, .nav-links {
+  display: flex;
 }
 
 a {
+  color: rgb(199, 105, 60);
   text-decoration: none;
-  color: var(--link_color);
+  text-decoration-color: white;
+  transition: all 500ms ease-in-out;
 }
 
-ul {
-	padding: 0;
+a:hover {
+  color: black;
+  transform: scale(1.5);
+  transition: all 500ms ease-in-out;
 }
 
-li {
-	list-style: none;
+#hero {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#yellowSquare {
+  background-color: rgb(235, 220, 102);
+  /* border: 1rem solid rgb(235, 220, 102); */
+  height: 350px;
+  width: 350px;
 }
 
-/* sections */
-#front-page, #events {
-  position: relative;
-  height: 100vh;
-  justify-content: center;
+#text {
+  color: black;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  text-align: right;
+  padding: 1rem;
+}
+
+.allThings {
+  margin-top: 4rem;
+}
+
+.js {
+  margin-top: -1rem;
+  font-size: 14rem;
+  padding-bottom: 0;
+}
+
+.socials {
+  list-style: none;
+  padding: 1.5rem;
+  display: flex;
+  height: 15vh;
+  width: auto;
+  justify-content:right;
   align-items: center;
 }
-#front-page {
-  background-color: #e6e0d5;
-  opacity: .92;
+
+.social-icons {
+  position:absolute;
   display: flex;
-  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: 1.5rem;
+  margin-top: 620px;
+  margin-right: 20px;
+  font-size: 2rem;
+  z-index: 1;
 }
 
-/* Front Page */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
 
-#content-main p {
-  font-size: 1.25rem;
-  font-weight: 600;
+#content-main, .qr {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#content-main {
+  /* border: 5px solid; */
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 10px; */
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+  border: 2px solid black;
+  box-shadow: 10px 5px 5px rgb(199, 105, 60);
+}
+
+.qr {
+  padding: 3rem;
+}
+
+.text-link {
+  text-decoration: underline;
 }
 
 /* Events */
@@ -112,6 +154,10 @@ li {
   left: 0;
   position: absolute;
   object-fit: cover;
+}
+
+ul {
+  list-style: none;
 }
 
 #carousel img:nth-child(1) {
@@ -184,7 +230,7 @@ li {
 
 #events{
   display:flex;
-  background-color: #fff0c9;
+  background-color: rgb(230, 233, 234);;
   opacity: .92;
   overflow: auto;
   margin: 0;
@@ -199,17 +245,8 @@ li {
   text-align: center;
   align-items: center;
   transform: translate(-50%, -50%);
+  margin-top: 4rem;
+  padding: 1rem;
+  border: 2px solid black;
+  box-shadow: 10px 5px 5px rgb(199, 105, 60);
 }
-
-/* Assets/buttons/icons */
-
-.icon-arrow,
-.icon-arrow-home {
-  display: block;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  width: 2vw;
-  height:auto;
-}
-
