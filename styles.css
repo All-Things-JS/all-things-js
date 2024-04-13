@@ -239,6 +239,10 @@ ul {
   justify-content: space-around;
 }
 
+#event-list > li {
+  padding: 1rem;
+}
+
 #test{
   flex-direction: column;
   justify-content: center;
