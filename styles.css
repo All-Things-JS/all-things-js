@@ -17,18 +17,23 @@ html {
 
 #main-menu {
   position: fixed;
-  float: right;
-  right: 0;
+  /* float: right;
+  right: 0; */
   z-index: 1;
   justify-content: space-around;
-  height: 15vh;
+  height: 7vh;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(199, 105, 60), rgb(235, 220, 102, 0.6));
+  /* background-color: rgb(235, 220, 102); */
+  display: flex;
+  justify-content: end;
 }
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.2rem;
-  padding: 1rem 2rem 0 0 ;
+  padding: 0.75rem 1rem 0 0;
 } 
 
 #main-menu, .nav-links {
