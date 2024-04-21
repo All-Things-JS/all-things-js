@@ -136,6 +136,7 @@ section {
   left: 0;
   position: absolute;
   object-fit: cover;
+  border: 4px solid rgb(235, 220, 102);
 }
 
 ul {
@@ -145,7 +146,7 @@ ul {
 #carousel img:nth-child(1) {
     animation-name: img1;
     animation-timing-function: steps(1, start);
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }
@@ -153,7 +154,7 @@ ul {
 #carousel img:nth-child(2) {
     animation-name: img2;
     animation-timing-function: steps(1, start);
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }
@@ -161,57 +162,131 @@ ul {
 #carousel img:nth-child(3) {
     animation-name: img3;
     animation-timing-function: steps(1, start);
-    animation-duration: 15s;
+    animation-duration: 20s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
 }
 
-@keyframes img1 {
-    0% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    50%{
-        opacity: 0;
-    }
-    100% {
+#carousel img:nth-child(4) {
+  animation-name: img4;
+  animation-timing-function: steps(1, start);
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
 
-        opacity: 1;
-    }
+#carousel img:nth-child(5) {
+  animation-name: img5;
+  animation-timing-function: steps(1, start);
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes img1 {
+0% {
+    opacity: 0;
+}
+20% {
+    opacity: 1;
+}
+40% {
+    opacity: 0;
+}
+60% {
+    opacity: 0;
+}
+80% {
+    opacity: 0;
+}
+100% {
+    opacity: 0;
+}
 }
 @keyframes img2 {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+}
+20% {
+    opacity: 0;
+}
+40% {
+    opacity: 1;
+}
+60% {
+    opacity: 0;
+}
+80% {
+    opacity: 0;
+}
+100% {
+  opacity: 0;
+}
 }
 @keyframes img3 {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+0% {
+    opacity: 0;
+}
+20% {
+    opacity: 0;
+}
+40% {
+    opacity: 0;
+}
+60% {
+    opacity: 1;
+}
+80% {
+    opacity: 0;
+}
+100% {
+  opacity: 0;
+}
+}
+@keyframes img4 {
+  0% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 0;
+  }
+  40% {
+      opacity: 0;
+  }
+  60% {
+      opacity: 0;
+  }
+  80% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+@keyframes img5 {
+0% {
+    opacity: 0;
+}
+20% {
+    opacity: 0;
+}
+40% {
+    opacity: 0;
+}
+60% {
+    opacity: 0;
+}
+80% {
+    opacity: 0;
+}
+100% {
+  opacity: 1;
+}
 }
 
 #content-main {
   height: auto;
+  width: 50%;
   padding: 1rem;
   border: 2px solid black;
   box-shadow: 10px 5px 5px rgb(199, 105, 60);
@@ -226,18 +301,30 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  background-color: rgb(230, 233, 234);;
-  margin: 0;
+  background-color: rgb(230, 233, 234);
+  margin-top: 10rem;
   padding: 0;
+}
+
+#event-heading {
+  margin: 5rem 0 3rem 0;
+}
+
+#eventLink {
+  text-decoration: underline;
+}
+
+#eventLink:hover {
+  text-decoration: none;
 }
 
 #event-list > li {
   padding: 1rem;
 }
 
-#test{
+#eventList{
   padding: 1rem;
   border: 2px solid black;
   box-shadow: 10px 5px 5px rgb(199, 105, 60);
