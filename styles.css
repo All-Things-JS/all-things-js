@@ -17,20 +17,24 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow-x: hidden;
 
 }
 
 #main-menu {
+  display: flex;
   position: fixed;
   z-index: 1;
-  justify-content: end;
+  justify-content: flex-end;
   height: 2.5rem;
   width: 100%;
   background: linear-gradient(to right, rgb(199, 105, 60), rgb(235, 220, 102, 0.6)); 
 }
 
 .nav-links {
+  display: flex;
   gap: 2rem;
   list-style: none;
   font-size: 1.2rem;
@@ -55,8 +59,11 @@ a:hover {
 }
 
 #hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -87,221 +94,151 @@ a:hover {
 }
 
 .socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
   padding: 1.5rem;
-  display: flex;
   height: 15vh;
   width: auto;
-  justify-content:right;
-  align-items: center;
 }
 
 .social-icons {
-  position:absolute;
   display: flex;
   gap: 2rem;
   list-style: none;
-  margin-top: -4rem;
-  margin-right: -1.2rem;
+  position: absolute;
+  margin-right: 1.7rem;
+  margin-top: 31rem;
   font-size: 2rem;
 }
 
 section {
   position:relative;
   height: 100vh;
+  width: 100vw;
+}
+
+.aboutTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  max-width: 70%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */ 
+.mySlides img {
+  /* width: 80%; */
+  height: auto;
+  /* display: none; */
+}
+
+.prev {
+  margin-left: -360px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 #about {
   display: flex;
   flex-direction: column;
-  position:relative;
   text-align: center;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50%;
+  width: auto;
 }
 
-.aboutTitle {
-  margin-bottom: 1rem;
-}
-
-.center {
+/* .about {
   display: block;
   justify-content: center;
   width: 50%;
   height: 100vh;
-  margin-top: 5rem;
-}
+} */
 
-
-#carousel{
-  display: flex;
-  max-width: 80%;
-  height: auto;
-  min-width: none;
-  min-height: calc((9/16) * 50vw);
-  position: relative;
-}
-
-.carouselImg{
-  max-width: 100%;
-  min-width: none;
-  position: absolute;
-  object-fit: cover;
-  border: 4px solid rgb(235, 220, 102);
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
-}
-
-#about.center, #carousel {
-  display: flex;
-  position: relative;
-  margin: auto;
-}
-
-ul {
-  list-style: none;
-}
-
-#carousel img:nth-child(1) {
-    animation-name: img1;
-    animation-timing-function: steps(1, start);
-    animation-duration: 20s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-}
-
-#carousel img:nth-child(2) {
-    animation-name: img2;
-    animation-timing-function: steps(1, start);
-    animation-duration: 20s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-}
-
-#carousel img:nth-child(3) {
-    animation-name: img3;
-    animation-timing-function: steps(1, start);
-    animation-duration: 20s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-}
-
-#carousel img:nth-child(4) {
-  animation-name: img4;
-  animation-timing-function: steps(1, start);
-  animation-duration: 20s;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-}
-
-#carousel img:nth-child(5) {
-  animation-name: img5;
-  animation-timing-function: steps(1, start);
-  animation-duration: 20s;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes img1 {
-0% {
-    opacity: 0;
-}
-20% {
-    opacity: 1;
-}
-40% {
-    opacity: 0;
-}
-60% {
-    opacity: 0;
-}
-80% {
-    opacity: 0;
-}
-100% {
-    opacity: 0;
-}
-}
-@keyframes img2 {
-  0% {
-    opacity: 0;
-}
-20% {
-    opacity: 0;
-}
-40% {
-    opacity: 1;
-}
-60% {
-    opacity: 0;
-}
-80% {
-    opacity: 0;
-}
-100% {
-  opacity: 0;
-}
-}
-@keyframes img3 {
-0% {
-    opacity: 0;
-}
-20% {
-    opacity: 0;
-}
-40% {
-    opacity: 0;
-}
-60% {
-    opacity: 1;
-}
-80% {
-    opacity: 0;
-}
-100% {
-  opacity: 0;
-}
-}
-@keyframes img4 {
-  0% {
-      opacity: 0;
-  }
-  20% {
-      opacity: 0;
-  }
-  40% {
-      opacity: 0;
-  }
-  60% {
-      opacity: 0;
-  }
-  80% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0;
-  }
-}
-@keyframes img5 {
-0% {
-    opacity: 0;
-}
-20% {
-    opacity: 0;
-}
-40% {
-    opacity: 0;
-}
-60% {
-    opacity: 0;
-}
-80% {
-    opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-}
 
 #content-main {
   position: relative;
@@ -315,10 +252,6 @@ ul {
 
 .text-link {
   text-decoration: underline;
-}
-
-#event-component {
-  margin-top: 5rem;
 }
 
 #events{
@@ -344,9 +277,13 @@ ul {
 
 #event-list > li {
   padding: 1rem;
+  list-style: none;
 }
 
 #eventList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
   border: 2px solid black;
   box-shadow: 10px 5px 5px rgb(199, 105, 60);
@@ -354,7 +291,7 @@ ul {
 
 @media (min-width: 300px) and (max-width: 600px) {
   
-  body, #about.center, #carousel {
+  body, #about.about, #carousel {
     min-width: 100%;
   }
 }
