@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0145800eed.js" crossorigin="anonymous"></script>
-    <title>All Things JS</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0145800eed.js" crossorigin="anonymous"></script>
+  <title>All Things JS</title>
+</head>
 
-  <body>
-    <nav id="main-menu">
+<body>
+  <nav id="main-menu">
 
     <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#events">Events</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#events">Events</a></li>
     </ul>
 
   </nav>
@@ -30,73 +34,76 @@
     <section id="home">
       <div id="hero">
         <div id="yellowSquare">
-            <div id="text">
+          <div id="text">
             <p class="allThings">All things</p>
             <p class="js">JS</p>
-            </div>
+          </div>
         </div>
 
         <div class="socials">
           <ul class="social-icons">
             <li id="discord">
-              <a href="https://discord.com/channels/1200884321725186198/1200884559974240266" 
-              target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://discord.com/channels/1200884321725186198/1200884559974240266" target="_blank"><i
+                  class="fab fa-discord"></i></a>
             </li>
             <li id="github">
-              <a href="https://github.com/all-things-JS" 
-              target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://github.com/all-things-JS" target="_blank"><i class="fab fa-github"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    
+
     <section id="about">
-      <h1 class = "aboutTitle">About All Things JS</h1>
+      <h1 class="aboutTitle">About All Things JS</h1>
 
-<div class="slideshow-container">
+      <div class="slideshow-container">
 
 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="./src/photos/coffeeBarr_022024_04.jpg" style="width:100%">
-    <div class="text">We are a community about sharing interests and spreading knowledge of Javascript and Javascript related topics.</div>
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/coffeeBarr_022024_04.jpg" style="width:100%">
+          <div class="text">We are a community about sharing interests and spreading knowledge of Javascript and
+            Javascript related topics.</div>
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="./src/photos/gitWorkshop_022024_08.jpg" style="width:100%">
-    <div class="text">Whether you are already in tech or just curious, all are welcome.</div>
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/gitWorkshop_022024_08.jpg" style="width:100%">
+          <div class="text">Whether you are already in tech or just curious, all are welcome.</div>
+        </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="./src/photos/meetup_022024_01.jpg" style="width:100%">
-    <div class="text">Hope to see you soon!</div>
-  </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/meetup_022024_01.jpg" style="width:100%">
+          <div class="text">Hope to see you soon!</div>
+        </div>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
 
     <section id="events">
       <div id="event-component">
-          <div id="event-heading">
+        <div id="event-heading">
           <h1 class="upcoming">Upcoming events</h1>
-          <a id="eventLink" href="https://calendar.google.com/calendar/u/0?cid=ZGNlNmEzNTM2ZWY5MjY3YjI5MmQ5ZTczYjhiODkxY2Y2YzYyZTBmZTY1MmI5M2I5NWFlZWFjNTViMzI1ZTFhY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank">Click to subscribe</a>
-          </div>
-          <div id="eventList">
+          <a id="eventLink"
+            href="https://calendar.google.com/calendar/u/0?cid=ZGNlNmEzNTM2ZWY5MjY3YjI5MmQ5ZTczYjhiODkxY2Y2YzYyZTBmZTY1MmI5M2I5NWFlZWFjNTViMzI1ZTFhY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+            target="_blank">Click to subscribe</a>
+        </div>
+        <div id="eventList">
           <ul id="event-list"></ul>
         </div>
       </div>
     </section>
   </main>
-    <script src="./carousel.js"></script>
-    <script src="src/events.js"></script>
-  
-  </body>
+  <script src="js/carousel.js"></script>
+  <script src="js/events.js"></script>
+
+</body>
+
 </html>
