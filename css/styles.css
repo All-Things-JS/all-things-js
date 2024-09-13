@@ -1,7 +1,6 @@
-
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 html {
@@ -30,7 +29,7 @@ main {
   justify-content: flex-end;
   height: 2.5rem;
   width: 100%;
-  background: linear-gradient(to right, rgb(199, 105, 60), rgb(235, 220, 102, 0.6)); 
+  background: linear-gradient(to right, rgb(199, 105, 60), rgb(235, 220, 102, 0.6));
 }
 
 .nav-links {
@@ -39,9 +38,10 @@ main {
   list-style: none;
   font-size: 1.2rem;
   padding: 0.5rem 2rem 0 0;
-} 
+}
 
-#main-menu, .nav-links {
+#main-menu,
+.nav-links {
   display: flex;
 }
 
@@ -67,6 +67,7 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 #yellowSquare {
   margin-top: 5rem;
   background-color: rgb(235, 220, 102);
@@ -114,7 +115,7 @@ a:hover {
 }
 
 section {
-  position:relative;
+  position: relative;
   height: 100vh;
   width: 100vw;
 }
@@ -174,7 +175,8 @@ section {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -184,8 +186,13 @@ section {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 #about {
@@ -212,7 +219,7 @@ section {
   text-decoration: underline;
 }
 
-#events{
+#events {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -233,12 +240,12 @@ section {
   text-decoration: none;
 }
 
-#event-list > li {
+#event-list>li {
   padding: 1rem;
   list-style: none;
 }
 
-#eventList{
+#eventList {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,7 +255,7 @@ section {
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
-  
+
   body {
     display: flex;
     flex-wrap: wrap;
@@ -259,7 +266,7 @@ section {
     margin-top: -100px;
   } */
 
- #hero {
+  #hero {
     display: flex;
     justify-content: center;
     align-items: center;
